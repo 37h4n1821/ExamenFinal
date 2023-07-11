@@ -219,7 +219,11 @@ def ganancias_totales(concierto:Concierto):
         print(f"|${str(ventas[0][tipo]*ventas[1][tipo][0]):10s}",end="")
         
         print()
-    print(f"Total\t\t      |{str(vent_t):10s}|${str(vent_t2):20s}")
+    if vent_t==0:
+        print("No se han generado ventas de ningun tipo!")
+    else:
+        print(f"Total\t\t      |{str(vent_t):10s}|${str(vent_t2):20s}")
+
     
 
 
